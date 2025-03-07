@@ -1,0 +1,145 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    text-align: center;
+    color: white;
+}
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: #1c1c1c;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin-top: 50px;
+}
+header {
+    background: #ff9800;
+    color: black;
+    padding: 20px;
+    border-radius: 15px 15px 0 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #ff9800;
+    font-weight: bold;
+    font-size: 18px;
+}
+section {
+    padding: 20px;
+}
+button {
+    background: #ff9800;
+    color: black;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+button:hover {
+    background: #e65100;
+}
+footer {
+    background: #ff9800;
+    color: black;
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+    font-weight: bold;
+}
+.p{
+    font-size: 18px;
+    margin-top: 20px;
+    color: black;
+}
+.click-text {
+    cursor: pointer;
+    color: #ff4081;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 50px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.click-text:hover {
+    color: #d81b60;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.birthday-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fffaf0;
+    padding: 20px;
+    width: 320px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    animation: pop-up 0.3s ease-in-out;
+}
+.gift-box {
+    font-size: 50px;
+    animation: bounce 1s infinite;
+}
+.birthday-box h2 {
+    color: #ff4081;
+}
+.close-btn {
+    background: #ff5c8a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.close-btn:hover {
+    background: #d81b60;
+}
+@keyframes pop-up {
+    0% {
+        transform: translate(-50%, -60%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
